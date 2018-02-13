@@ -1,6 +1,6 @@
 /* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-v18-latin_cyrillic-regular.eot");
@@ -9,9 +9,50 @@
 
 /* roboto-slab-regular - latin_cyrillic */
 @font-face {
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-slab-v7-latin_cyrillic-regular.eot");
   src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.svg#RobotoSlab") format("svg");
+}
+
+html, body {
+  height: 100%;
+}
+
+.first-screen {
+  width: 100%;
+  height: 100%;
+}
+
+.first-screen__top {
+  background: url(../img/bg@2x.png) no-repeat top center;
+  max-width: 1920px;
+  width: 100%;
+  min-height: 810px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.first-screen__top .container {
+  color: white;
+}
+
+.first-screen__top .logo-txt {
+  font-size: 12px;
+  font-family: Roboto;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 50%;
+  line-height: 1.8;
+}
+
+.logo {
+  float: left;
+  height: 100%;
+}
+
+.padding-side-0 {
+  padding-left: 0;
+  padding-right: 0;
 }

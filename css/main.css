@@ -1,6 +1,6 @@
 /* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-v18-latin_cyrillic-regular.eot");
@@ -9,7 +9,7 @@
 
 /* roboto-slab-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-slab-v7-latin_cyrillic-regular.eot");
