@@ -42,9 +42,33 @@ html, body {
   font-size: 12px;
   font-family: Roboto;
   height: 100%;
-  padding-top: 10%;
+  padding-top: 10.5%;
   padding-left: 50%;
-  line-height: 1.8;
+  line-height: 1.4;
+}
+
+.first-screen__top ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.first-screen__top li {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.first-screen__top a {
+  font-family: Roboto;
+  font-weight: bold;
+  color: white;
 }
 
 .logo {
