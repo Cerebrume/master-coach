@@ -1,0 +1,17 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v18-latin_cyrillic-regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v18-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v18-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v18-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v18-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v18-latin_cyrillic-regular.svg#Roboto") format("svg");
+}
+
+/* roboto-slab-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v7-latin_cyrillic-regular.eot");
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-slab-v7-latin_cyrillic-regular.svg#RobotoSlab") format("svg");
+}
