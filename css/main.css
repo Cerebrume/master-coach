@@ -47,24 +47,6 @@ html, body {
   line-height: 1.4;
 }
 
-.first-screen__top ul {
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-}
-
-.first-screen__top li {
-  font-size: 14px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-}
-
 .first-screen__top a {
   font-family: Roboto;
   font-weight: bold;
@@ -79,4 +61,40 @@ html, body {
 .padding-side-0 {
   padding-left: 0;
   padding-right: 0;
+}
+
+.navbar__main {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar__main li {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar__contact {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.navbar__contact li {
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
 }
