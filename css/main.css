@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
@@ -18,11 +19,13 @@
 
 html, body {
   height: 100%;
+  font-family: Roboto;
 }
 
+/* First Screen */
 .first-screen {
-  width: 100%;
-  height: 100%;
+  max-width: 1920px;
+  min-height: 980px;
 }
 
 .first-screen__top {
@@ -40,7 +43,6 @@ html, body {
 
 .first-screen__top .logo-txt {
   font-size: 12px;
-  font-family: Roboto;
   height: 100%;
   padding-top: 10.5%;
   padding-left: 50%;
@@ -51,6 +53,10 @@ html, body {
   font-family: Roboto;
   font-weight: bold;
   color: white;
+}
+
+.first-screen__top a:hover {
+  text-decoration: none;
 }
 
 .first-screen__top .info {
@@ -160,4 +166,263 @@ html, body {
   text-align: left;
   text-decoration: none;
   line-height: 2.4em;
+}
+
+.first-screen__bot {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 170px;
+  background-color: white;
+  margin: 0 auto;
+  border-bottom-color: #C2C2C2;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.first-screen__bot .info {
+  min-height: 170px;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-screen__bot .info span {
+  font-size: 22px;
+  color: #FFB750;
+}
+
+.first-screen__bot .info .info__pad {
+  padding-left: 54px;
+}
+
+/* End First Screen */
+/* ----------------- */
+/* Start Second Screen */
+.second-screen {
+  max-width: 1920px;
+  min-height: 820px;
+  padding-top: 120px;
+  margin-bottom: 20px;
+}
+
+.second-screen .container {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.second-screen .container .row {
+  width: 100%;
+}
+
+.second-screen .container .row .col-6 {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin-bottom: 59px;
+}
+
+.second-screen .container .row .col-6 div {
+  margin: 2px 0px 0px 9.2%;
+  padding-right: 3%;
+}
+
+.second-screen .container .row .col-6 h3 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.second-screen .container .row .col-6 span {
+  font-family: Roboto Slab;
+}
+
+.second-screen .container .row .right {
+  padding-left: 50px;
+}
+
+.second-screen .topic {
+  font-weight: bold;
+  font-size: 34px;
+  color: #275EFF;
+  text-align: center;
+}
+
+.second-screen .subtopic {
+  font-size: 22px;
+  color: #C2C2C2;
+  text-align: center;
+  padding: 1% 10%;
+  margin-bottom: 100px;
+}
+
+/* End Second Screen */
+/* ----------------- */
+/* Start Third Screen */
+.coach {
+  max-width: 1920px;
+  min-height: 820px;
+}
+
+.coach .section {
+  margin-top: 120px;
+  padding: 120px 0;
+  background-color: #003FFF;
+  background: radial-gradient(#003FFF, #002080);
+  transform: skewY(-5deg);
+}
+
+.coach .section .container {
+  transform: skewY(5deg);
+}
+
+.coach .topic {
+  font-weight: bold;
+  font-size: 34px;
+  color: white;
+  text-align: center;
+}
+
+.coach .subtopic {
+  font-size: 22px;
+  color: #C2C2C2;
+  text-align: center;
+  padding: 1% 10%;
+  margin-bottom: 100px;
+}
+
+.coach .coach-person {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.coach .coach-person .coach__photo {
+  width: 414px;
+  height: 414px;
+  margin-left: 45px;
+}
+
+.coach .coach-person .coach__text {
+  max-width: 527px;
+}
+
+.coach .coach-person h4 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.coach .coach-person p {
+  margin-bottom: 30px;
+}
+
+.coach .coach-person h5 {
+  color: #FFB750;
+  font-size: 22px;
+  margin-right: 64%;
+  border-bottom: 1px #FFB750 solid;
+}
+
+/* End Third Screen */
+/* ----------------- */
+/* Start Learn Program */
+.learn-program {
+  padding-top: 200px;
+}
+
+.learn-program .topic {
+  font-weight: bold;
+  font-size: 34px;
+  color: #275EFF;
+  text-align: center;
+}
+
+.learn-program .subtopic {
+  font-size: 22px;
+  color: #C2C2C2;
+  text-align: center;
+  padding: 0% 10%;
+  padding-top: 1%;
+  margin-bottom: 100px;
+}
+
+.learn-program .plus-symbol {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 16px;
+  top: 21px;
+}
+
+.learn-program .card-body li {
+  list-style: none;
+  /* Убираем исходные маркеры */
+  background: url("../img/cup.svg") no-repeat 0 0px;
+  /* Параметры фона */
+  padding-left: 32px;
+  /* Смещаем текст вправо */
+  line-height: 22px;
+  margin-bottom: 29px;
+  background-size: 22px 22px;
+}
+
+.learn-program .card {
+  margin-bottom: 20px;
+}
+
+.learn-program button img {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden;
+}
+
+.learn-program .rotate-45 {
+  transform: rotate(45deg);
+}
+
+.learn-program .accord {
+  list-style-type: none;
+  display: flex;
+  color: black;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.learn-program button {
+  background-color: #fff;
+  text-align: left;
+  font-size: 22px;
+  padding: 14px 0;
+  padding-left: 26px;
+  color: #888888;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #888888;
+  border-image: initial;
+  cursor: pointer;
+  font-weight: bold;
+  transition-duration: 0.25s;
+}
+
+.button-list.black-text {
+  color: #000000;
 }
