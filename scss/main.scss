@@ -14,7 +14,7 @@ html, body {
 }
 
 .first-screen__top {
-	background: url(../img/bg-main@2x.png) no-repeat top center;
+	background: url(../img/bg.jpg) no-repeat top center;
 	max-width: 1920px;
 	width: 100%;
 	min-height: 810px;
@@ -96,7 +96,7 @@ html, body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	padding-left: 20px;
+	padding-left: 10px;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
@@ -107,6 +107,9 @@ html, body {
 		text-align: left;
 		text-decoration: none;
 		line-height: 2.4em;
+		img {
+			margin-right: 10px;
+		}
 	}
 }
 
