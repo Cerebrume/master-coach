@@ -11,6 +11,9 @@ html, body {
 .first-screen {
 	max-width: 1920px;
 	min-height: 980px;
+	&__logo-link .logo-txt {
+		font-weight: 200;
+	}
 }
 
 .first-screen__top {
@@ -36,6 +39,7 @@ html, body {
 		color: white;
 		&:hover {
 			text-decoration: none;
+			color: $main-color;
 		}
 	}
 	.info {
@@ -273,7 +277,6 @@ html, body {
 
 .learn-program {
 	padding-top: 200px;
-	padding-bottom: 120px;
 	.topic {
 		font-weight: bold;
 		font-size: 34px;
@@ -390,6 +393,9 @@ p {
 	font-size: $p-size;
 }
 
+.suport {
+	padding-top: 120px;
+}
 
 .suport__header {
 	color: $h1-color;
@@ -549,10 +555,6 @@ p {
 
 // Sertification section
 
-.sertif {
-	padding-bottom: 120px;
-}
-
 .sertif__img-container {
 	padding: 10px 7px;
 	box-shadow: 0 0 30px -20px black;
@@ -587,6 +589,7 @@ p {
 
 .review {
 	overflow: hidden;
+	padding-top: 120px;
 	.container {
 		margin-top: 100px;
 	}
@@ -693,6 +696,10 @@ footer .navbar {
 	}
 	a {
 		color: #fff;
+		&:hover {
+			text-decoration: none;
+			color: $main-color;
+		}
 	}
 }
 
@@ -703,7 +710,16 @@ footer {
 }
 
 .footer__logo {
-	display: block; 
+	display: block;
+	a {
+		&:hover {
+			text-decoration: none;
+			
+			& > .logo-txt {
+				color: $main-color;
+			}
+		}
+	}
 	.logo {
 		width: 70px;
 		height: 64px;
@@ -739,6 +755,10 @@ footer {
 	a {
 		color: #fff;
 		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+			color: $main-color;
+		}
 	}
 }
 
