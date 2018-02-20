@@ -9,7 +9,6 @@ html, body {
 /* First Screen */
 
 .first-screen {
-	max-width: 1920px;
 	min-height: 980px;
 	&__logo-link .logo-txt {
 		font-weight: 200;
@@ -18,7 +17,6 @@ html, body {
 
 .first-screen__top {
 	background: url(../img/bg.jpg) no-repeat top center;
-	max-width: 1920px;
 	width: 100%;
 	min-height: 810px;
 	background-size: cover;
@@ -118,7 +116,6 @@ html, body {
 }
 
 .first-screen__bot {
-	max-width: 1920px;
 	width: 100%;
 	min-height: 170px;
 	background-color: white;
@@ -192,30 +189,31 @@ html, body {
 			}
 		}
 	}
-	.topic {
-		font-weight: bold;
-		font-size: 34px;
-		color: $second-color;
-		text-align: center;
-	}
-	.subtopic {
-		font-size: 22px;
-		color: $subtopic-color;
-		text-align: center;
-		padding: 1% 10%;
-		margin-bottom: 100px;
-		margin-top: 20px;
-	}
+	
 
 }
 
+.topic {
+	font-weight: bold;
+	font-size: 34px;
+	color: $second-color;
+	text-align: center;
+}
+.subtopic {
+	font-size: 22px;
+	color: $subtopic-color;
+	text-align: center;
+	padding: 0% 10%;
+	margin-bottom: 100px;
+	margin-top: 20px;
+}
 /* End Second Screen */
 /* ----------------- */
 /* Start Third Screen */
 
 .coach {
-	max-width: 1920px;
-	min-height: 820px;
+	/* max-width: 1920px;
+	min-height: 820px; */
 	.section {
 		margin-top: 120px;
 		padding: 120px 0;
@@ -240,24 +238,30 @@ html, body {
 		margin-bottom: 100px;
 	}
 	.coach-person {
-		width: 100%;
 		list-style-type: none;
 		display: flex;
 		color: white;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
 		list-style: none;
 		.coach__photo {
 			width: 414px;
 			height: 414px;
-			margin-left: 45px;
+			border: 7px solid rgb(255, 255, 255);
+			border-radius: 10px;
+			box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+			margin-right: 75px;
+			z-index: 1;
+			/* margin-left: 45px; */
 		}
 		.coach__text {
 			max-width: 527px;
 		}
-		h4 {
+		h2 {
 			font-size: 22px;
 			margin-bottom: 40px;
+			font-weight: bold;
+			color: white;
 		}
 		p {
 			margin-bottom: 30px;
@@ -269,7 +273,63 @@ html, body {
 			border-bottom: 1px $main-color solid;
 		}
 	}
+
+	.row-helper {
+		margin-top: 70px;
+	}
+
+	.coach-help {
+		list-style-type: none;
+		display: flex;
+		color: white;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: flex-start;
+		list-style: none;
+		.coach__photo {
+			width: 260px;
+			height: 260px;
+			border: 4px solid rgb(255, 255, 255);
+			border-radius: 10px;
+			box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+			margin-right: 75px;
+			z-index: 1;
+			margin-bottom: 50px;
+		}
+		.coach__text {
+			width: 400px;
+			list-style-type: none;
+			padding: 0;
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+			justify-content: flex-start;
+			list-style: none;
+		}
+		h2 {
+			font-size: 22px;
+			margin-bottom: 40px;
+			font-weight: bold;
+			color: white;
+		}
+		p {
+			margin-bottom: 30px;
+			
+		}
+		h5 {
+			color: $main-color;
+			font-size: 22px;
+			margin-right: 64%;
+			border-bottom: 1px $main-color solid;
+		}
+	}
 }
+/* .pad_down {
+	font-family: "Roboto Slab", serif;
+	line-height: 28px;
+	font-size: $p-size;
+	margin-bottom: 30px;
+} */
 
 /* End Third Screen */
 /* ----------------- */
@@ -357,6 +417,46 @@ html, body {
 	color: #000000;
 }
 
+.video-screen {
+	margin-top: 100px;
+}
+
+//learn road
+
+.learn-road {
+	margin-top: 100px;
+	.col-6 {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		list-style: none;
+		padding-left: 32px;
+		padding-right: 32px;
+		div {
+			list-style-type: none;
+			padding: 0;
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+			justify-content: center;
+			list-style: none;
+			padding-left: 30px;
+		}
+	}
+	img {
+		height: 150px;
+		width: 150px;
+	}
+	h3 {
+		padding-bottom: 15px;
+	}
+	.row {
+		padding-bottom: 36px;
+	}
+}
+
 // SUPORT SECTION
 
 h1, h2, h3, h4, h5, p{
@@ -389,7 +489,7 @@ h4 {
 
 p {
 	font-family: "Roboto Slab", serif;
-	line-height: 21px;
+	line-height: 28px;
 	font-size: $p-size;
 }
 

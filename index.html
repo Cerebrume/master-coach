@@ -10,16 +10,21 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	
 	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="dist/animate.css">
 	<link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="dist/assets/owl.theme.default.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="dist/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
   <body>
 	<!-- First Screen -->
 	<div class="first-screen">
 		<div class="first-screen__top">
 			<div class="container padding-side-0">
-				<nav class="navbar navbar-expand-lg justify-content-center padding-side-0">
+				<nav class="wow fadeInDown navbar navbar-expand-lg justify-content-center padding-side-0">
 						<div class="col-2">
 							<a class="first-screen__logo-link" href="#first-screen">
 								<img src="img/MCU.png" alt="logo" class="logo">
@@ -47,8 +52,8 @@
 							</ul>
 						</div>
 				</nav>
-				<div class="info">
-					<h1>Растите профессионально
+				<div class="info wow fadeInLeft">
+					<h1 class="">Растите профессионально
 						с международным
 						сертифицированным
 						курсом EMCC и ICS</h1>
@@ -61,10 +66,10 @@
 		</div>
 		<div class="first-screen__bot">
 			<div class="container info">
-					<div class="col-3">
+					<div class="col-3 wow fadeInLeft">
 							Более <span>1000</span> участников встреч 
 					</div>
-					<div class="col-5 info__pad">
+					<div class="col-5 info__pad wow fadeInRight">
 							Больше <span>30000</span> посетителей интернет пространства
 					</div>
 				
@@ -72,7 +77,7 @@
 		</div>
 	</div>
 	<!-- Second Screen -->
-	<div id="second-screen" class="second-screen">
+	<div id="second-screen" class="second-screen wow fadeInLeft">
 		<div class="container">
 			<div class="topic col-12">Для кого этот коучинг</div>
 			<div class="subtopic col-12">
@@ -126,31 +131,57 @@
 	<!-- Third Screen -->
 	<div id="third-screen" class="coach">
 		<div class="section">
-			<div class="container">
-				<div class="topic col-12">Кто будет обучать</div>
-				<div class="subtopic col-12">
+			<div class="container ">
+				<div class="topic col-12 wow fadeInLeft">Кто будет обучать</div>
+				<div class="subtopic col-12 wow fadeInLeft">
 				<h2>Профессионал, который провел более 1000 часов</h2>
 				<h2> индивидуальных коуч-сессий — знает своё дело</h2>
 				</div>
-				<div class="coach-person">
-					<img class="col-5 coach__photo" src="img/coach-photo.png" alt="coach">
-					<div class="coach__text col-6">
-						<h4>Александр Тищук</h4>
-						<p>Бизнес - тренер с 10-ти летним стажем, консультант в вопросах
-							управления и развития персонала. В общей сложности провел
-							свыше 1000 бизнес-тренингов, на которых было обучено
-							около 8000 человек</p>
-						<p>Член Европейского Совета коучинга и менторинга (ЕМСС)</p>
-						<p>Основатель и ведущий тренер Школы профессионального
-							коучинга «Master Coach Ukraine»</p>
-						<h5>И это еще не всё!</h5>
+				
+				<div class="row justify-content-end">
+					<div class="coach-person col-11 wow fadeInUp">
+						<img class="coach__photo" src="img/coach-photo2.svg" alt="coach">
+						<div class="coach__text">
+							<h2>Александр Тищук</h2>
+							<p>Бизнес - тренер с 10-ти летним стажем, консультант в вопросах
+								управления и развития персонала. В общей сложности провел
+								свыше 1000 бизнес-тренингов, на которых было обучено
+								около 8000 человек</p>
+							<p>Член Европейского Совета коучинга и менторинга (ЕМСС)</p>
+							<p>Основатель и ведущий тренер Школы профессионального
+								коучинга «Master Coach Ukraine»</p>
+							<p>Соавтор и ведущий тренер программы «Master Coach» в Обьединенных Арабских Эмиратах</p>
+						</div>
 					</div>
 				</div>
+				<div class="row-helper row justify-content-center">
+					
+					<div class="coach-help col-5 wow fadeInLeft">
+						<img class="coach__photo" src="img/nata-photo.jpg" alt="coach">
+						<div class="coach__text">
+							<h2>Наталия Войцеховская</h2>
+							<p>Лайф и Бизнес коуч, супервизор,  психолог, психотерапевт по методу Символдрама, 
+									ведущая терапевтических групп и тренингов</p>
+							<p>Супервизор и преподаватель школы</p>
+						</div>
+					</div>
+					<div class="coach-help col-5 wow fadeInRight">
+							<img class=" coach__photo" src="img/nikolay-photo.jpg" alt="coach">
+							<div class="coach__text">
+									<h2>Николай Ноник</h2>
+									<p>Сертифицированный Бизнес и Лайф коуч,
+											Супервизор и преподаватель школы
+									</p>
+									<p></p>
+							</div>
+						</div>
+				</div>
+					
 			</div>
 		</div>
 	</div>
 	<!-- Learn programm -->
-	<div id="fourth-screen" class="learn-program">
+	<div id="fourth-screen" class="learn-program wow fadeInLeft">
 		<div class="container">
 			<div class="topic col-12">Программа обучения</div>
 			<div class="subtopic col-12">
@@ -251,8 +282,86 @@
 		</div>
 
 	</div>
-	
-	<section id="suport-screen" class="suport">
+
+	<div class="video-screen wow fadeInRight">
+		<div class="container">
+			<div class="topic col-12">Приемущества школы</div>
+			<div class="subtopic col-12">
+				<h2>Практика, поддержка после обучения – два кита успешного старта в коучинге.</h2>
+				<h2>Только в нашей Школе участники получают и то, и другое!</h2>
+			</div>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xUECYYxfBPU"></iframe>
+			</div>
+		</div>
+	</div>
+
+<!-- Learn Road -->
+
+	<div class="learn-road">
+		<div class="container">
+			<div class="topic col-12">Как проходит обучение</div>
+			<div class="subtopic col-12">
+				<h2>Обучение строится так, чтобы на основе полученных знаний,</h2>
+				<h2>умений и навыков Вы могли создать собственный бизнес-проект</h2>
+			</div>
+			<div class="row">
+				<div class="col-6 wow fadeInLeft">
+					<img src="img/book.svg" alt="book">
+					<div>
+						<h3>Теория</h3>
+						<span>Небольшие блоки, которые объясняют
+								концепции, модели, принципы</span>
+					</div>
+				</div>
+				<div class="col-6 right wow fadeInRight">
+					<img src="img/lecture.svg" alt="lecture">
+					<div>
+						<h3>Групповая практика</h3>
+						<span>Тренировка группы вместе с ведущим</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 wow fadeInLeft">
+					<img src="img/target.svg" alt="target">
+					<div>
+						<h3>Пример ведущего</h3>
+						<span>Эксперт демонстрирует работу
+							<p>техник на себе</p>	</span>
+					</div>
+				</div>
+				<div class="col-6 right wow fadeInRight">
+					<img src="img/teamwork-2.svg" alt="teamwork">
+					<div>
+						<h3>Демонстрация</h3>
+						<span>Тренер показывает изучаемые
+								техники с добровольцем</span>
+					</div>
+				</div>
+			</div>
+			<div class="row pb-0">
+				<div class="col-6 wow fadeInLeft">
+					<img src="img/double-chat.svg" alt="double-chat">
+					<div>
+						<h3>Парная практика</h3>
+						<span>Отработка техник в парах, меняясь
+								ролями коуч-клиент</span>
+					</div>
+				</div>
+				<div class="col-6 right wow fadeInRight">
+					<img src="img/chat.svg" alt="chat">
+					<div>
+						<h3>Обратная связь</h3>
+						<span>Обсуждение, работа над ошибками,
+								списки литературы</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="suport-screen" class="suport wow fadeInUp">
 			<div class="container">
 				<h1 class="suport__header text-center">Межмодульная поддержка</h1>
 				<h2 class="suport__sub-header text-center">Благодаря этому, Вы на парктике отточите все навыки</h2>
@@ -281,14 +390,14 @@
 			<h2>и закрепите материал</h2>
 			<div class="container">
 				<div class="row">
-					<div class="col-12 result__first text-left">
+					<div class="col-12 result__first text-left wow fadeInLeft">
 						<span class="result__big-letter result__big-letter--red">1</span>
 						<span class="result__desc">Самую перспективную профессию XXI века</span>
 					</div>
 	
 				</div>
 				<div class="row justify-content-end">
-						<div class="col-6 result__first text-left">
+						<div class="col-6 result__first text-left wow fadeInRight">
 							<span class="result__big-letter result__big-letter--blue">2</span>
 							<span class="result__desc">Персональный план построения коучинговой
 									практики</span>
@@ -296,21 +405,21 @@
 		
 				</div>
 				<div class="row">
-					<div class="col-12 result__first text-left">
+					<div class="col-12 result__first text-left wow fadeInLeft">
 						<span class="result__big-letter result__big-letter--red">3</span>
 						<span class="result__desc">Станете участником Клуб профессиональных
 								коучей Украины </span>
 					</div>
 				</div>
 				<div class="row justify-content-end">
-						<div class="col-6 result__first text-left">
+						<div class="col-6 result__first text-left wow fadeInRight">
 							<span class="result__big-letter result__big-letter--blue">4</span>
 							<span class="result__desc">Осознаете свои истинные таланты, ценности
 									и миссию</span>
 						</div>
 				</div>
 				<div class="row">
-						<div class="col-12 result__first text-left">
+						<div class="col-12 result__first text-left wow fadeInLeft">
 							<span class="result__big-letter result__big-letter--red">5</span>
 							<span class="result__desc">Найдете ресурсы для позитивных изменений
 									в вашей жизни и движения вперед!</span>
@@ -319,11 +428,11 @@
 			</div>
 		</section> <!-- result end -->
 	
-		<section id="offer" class="offer text-center">
+		<section id="offer" class="offer text-center ">
 			<h1>Экономьте до 20% на обучении</h1>
 			<h2>Скидка действует при оплате всех модулей</h2>
 			<div class="container container--padding-top">
-				<div class="row justify-content-center">
+				<div class="row justify-content-center wow fadeInLeft">
 					<div class="offer__image offer__image--margin-top">
 						<svg width=512 height=341 
 							xmlns="http://www.w3.org/2000/svg" 
@@ -349,7 +458,7 @@
 				<h2>Вы получаете международный сертификат с указанием</h2>
 				<h2>специализаций Лайф-коучинг и Бизнес-коучинг</h2>
 				<div class="container">
-					<div class="row justify-content-center padding-top">
+					<div class="row justify-content-center padding-top wow fadeInRight">
 						<div class="sertif__img-container col-5">
 							<img class="sertif__img" src="img/sertificate.jpg" alt="sertificate" srcset="">
 						</div>
@@ -448,32 +557,32 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="dist/owl.carousel.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+	<script src="/path/to/noframework.waypoints.min.js"></script>
 	<script>
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel(
-	  {
-		items:3,
-		merge:false,
-        loop:true,
-        video:true,
-		margin: 50,
-		responsive:{ 
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:2
-                    },
-                    1000:{
-                        items:3,
-						margin: 30
-                    }
-}
-	  }
-  );
+		$(document).ready(function(){
+		$('.owl-carousel').owlCarousel(
+			{
+				items:3,
+				merge:false,
+				loop:true,
+				video:true,
+				margin: 50,
+				responsive:{ 
+							0:{
+								items:1
+							},
+							600:{
+								items:2
+							},
+							1000:{
+								items:3,
+								margin: 30
+							}
+		}
+			}
+		);
 
-});
+		});
 	</script>
 	<script src="js/dropdown-list.js"></script>
   </body>
