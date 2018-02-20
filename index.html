@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	
 	<!-- Custom styles for this template -->
-	<link rel="stylesheet" href="dist/animate.css">
+	<link rel="stylesheet" href="dist/animate.min.css">
 	<link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="dist/assets/owl.theme.default.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -555,7 +555,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="dist/owl.carousel.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="/path/to/noframework.waypoints.min.js"></script>
 	<script>
 		$(document).ready(function(){
 		$('.owl-carousel').owlCarousel(
@@ -579,14 +578,9 @@
 		}
 			}
 		);
-
+		new WOW().init();
 		});
 	</script>
-	<script>
-			$(document).ready(function(){
-				new WOW().init();
-			});
-			</script>
 	<script src="js/dropdown-list.js"></script>
   </body>
 </html>
