@@ -438,15 +438,15 @@
 							 <image href="./img/box.svg" height="341" width="512"/>    
 						</svg>
 					</div>
-					<div class="offer__form">
+					<form id="form-1" method="POST" class="offer__form">
 						<h3 class="offer__h3">Приводите друзей и получайте скидки!</h3>
 						<h4>При оплате всех модулей скидка 10%,
 								с другом или женой — 20%</h4>
-						<input class="offer__input" type="text" name="name" placeholder="ФИО">
-						<input class="offer__input" type="email" name="email" placeholder="Email">
-						<input class="offer__input" type="text" name="phone" placeholder="Телефон">
-						<input type="button" class="offer__button" value="Получить скидку">
-					</div>
+						<input class="offer__input" type="text" name="Name" required="required" placeholder="ФИО">
+						<input class="offer__input" type="text" name="E-mail" required="required" placeholder="Email">
+						<input class="offer__input" type="text" name="Phone" required="required" placeholder="Телефон">
+						<input type="submit" class="offer__button" value="Получить скидку">
+					</form>
 				</div>
 			</div>
 		</section>
@@ -549,12 +549,51 @@
 			<p class="footer__copyright">2018 © Master Coach Ukraine. Creater by <a target="_blank" href="http://https://vk.com/dmitrykazanovsky" >@dkazanovsky</a></p>
 		</footer>
 
+		<div class="modal fade" id="ModalOK" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLongTitle">Успех по нажатию, всего лишь, одной кнопки</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+					  Все прошло круто. Ваши данные отправили и вам таки скоро перезвонят, мой дорогой друг.
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		
+		<div class="modal fade" id="ModalError" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Ошибки случаются</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Похоже где-то возникла ошибка. Подождите немного и попробуйте снова. А лучше напишите об ошибке нам :3
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+			</div>
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="dist/owl.carousel.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 	<script>
 		$(document).ready(function(){
 		$('.owl-carousel').owlCarousel(
@@ -579,8 +618,27 @@
 			}
 		);
 		new WOW().init();
+
+		$("#form-1").submit(function(e) { //Change
+			var th = $(this);
+			e.preventDefault();
+			$.ajax({
+				
+				type: "POST",
+				url: "mail.php", //Change
+				data: th.serialize(),
+				success: function(){
+				$('#ModalOK').modal('show');
+			},
+				error: function(){
+				$('#ModalError').modal('show');
+			}
+			})
+			return false;
 		});
+	});
 	</script>
+	
 	<script src="js/dropdown-list.js"></script>
   </body>
 </html>
