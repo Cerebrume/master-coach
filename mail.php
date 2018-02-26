@@ -6,14 +6,14 @@ $method = $_SERVER['REQUEST_METHOD'];
 $c = true;
 if ( $method === 'POST' ) {
 
-	?> <script> alert("Darova!");</script>
+	?> 
 	<?php
 	$project_name = "Master Coach Ukraine";
-	$admin_email  = "admin_email";
+	$admin_email  = "zhtmaster@i.ua";
 	$form_subject = "Заявка с сайта Master Coach Ukraine";
 
 	foreach ( $_POST as $key => $value ) {
-		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+		if ( $value != "" && $key != "project_name" && $key != "zhtmaster@i.ua" && $key != "form_subject" ) {
 			$message .= "
 			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
 				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
@@ -29,7 +29,7 @@ if ( $method === 'POST' ) {
 	$form_subject = trim($_GET["form_subject"]);
 
 	foreach ( $_GET as $key => $value ) {
-		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+		if ( $value != "" && $key != "project_name" && $key != "zhtmaster@i.ua" && $key != "form_subject" ) {
 			$message .= "
 			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
 				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
